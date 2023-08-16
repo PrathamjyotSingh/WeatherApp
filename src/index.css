@@ -1,0 +1,91 @@
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+  font-size: 2rem;
+}
+.app {
+  width:100%;
+  height: 100vh;
+  color: #222020;
+}
+
+.app:before{
+  content: '';
+  background:url('./weather_logo2.jpeg') no-repeat center center/cover ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app input{
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8ff;
+}
+
+.app .search{
+  text-align: center;
+  padding: 1px;
+}
+
+::placeholder{
+  color: #f8f8f8ff;
+}
+
+.container{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.longlat{
+  display: flex;
+  padding: 0%;
+}
+
+.app .top{
+  margin: 1rem auto;
+  padding-bottom: 100px;
+  padding-inline: 0px;
+  padding-left: 15px;
+}
+/* .app .description{
+  right: -90%;
+  transform-origin: 0,0;
+  transform: rotate(269deg); */
+/* } */
+.app .bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+.bold{
+  font-weight: 700;
+}
